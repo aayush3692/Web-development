@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color: #387478;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #E2F1E7;
+}
+
+.left{
+    margin-left: 20px;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    
+}
+.right ul{
+    display: flex;
+}
+.right ul li {
+    display: flex;
+    list-style: none;
+    margin: 0px 23px;
+    font-size: 25px;
+}
+.right ul li a{
+    text-decoration: none;
+    color: black;
+}
+.right ul li a:hover{
+    color: #387478;
+}
+
+.contact-btn{
+    height: 35px;
+    width: 100px;
+    background-color: #243642;
+    color: #E2F1E7;
+    margin: 0px 25px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.contact-btn:hover{
+    color: #243642;
+    background-color: #E2F1E7;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 110px 0;
+
+}
+main hr{
+    border: 0;
+    background: #243642;
+    height: 2.2px;
+    margin-bottom: 40px ;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 3rem;
+    margin: 30px 0;
+}
+.leftSection p{
+    font-size: 2rem;
+}
+.leftSection .buttons{
+    padding: 50px 0;
+}
+.leftSection .btn{
+    background-color: #E2F1E7;
+    font-size: 20px;
+    color: #387478;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 50px;
+    border: 2px solid black;
+    padding: 4px 4px;
+}
+.leftSection .btn:hover{
+    background-color: #387478;
+    color: #E2F1E7;
+}
+.rightSection img{
+    width: 80%;
+    margin: 50px 0;
+}
+.purple{
+    color: #E2F1E7;
+}
+#element{
+    color: #E2F1E7;
+}
+.secondSection{
+    max-width: 80%;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondSection h1{
+    font-size: 1.9em;
+}
+.gray{
+    color: #387478;
+}
+.secondSection .box{
+    background: #E2F1E7;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+
+}
+.secondSection .vertical{
+    height: 96px;
+    width: 1px;
+    background-color: #E2F1E7;
+    margin: 0 120px;
+}
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: #E2F1E7;
+    width: 150px;
+    font-size: 12px;
+}
+
+footer{
+    background-color: #243642;
+}
+.footer{
+    display: flex;
+    padding: 23px 100px;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width: 220px;
+}
+footer .text-rights{
+    text-align: center;
+    color: #E2F1E7;
+    padding: 12px 0;
+}

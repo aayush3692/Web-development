@@ -1,0 +1,55 @@
+logo{
+    margin: 0;
+}
+.top-container{
+    background-image: url("https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-container h1{
+    color: #F2EED7;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+
+}
+.text{
+    margin: 50px 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: #F2EED7;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    transition: background-color 0.4s;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+    margin-right: 20px;
+}
+.navbar ul li a:hover{
+    opacity: 0.5;
+}
+
+.navbar.active{
+    background-color: #243642;
+}
+.navbar.active ul li a {
+    color: #E2F1E7;
+}

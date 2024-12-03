@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    font-size: 100px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    backdrop-filter: brightness(.5);
+}
+.btn{
+    background-color: black;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: 1s background-color;
+    white-space: nowrap;
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+}
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: #FFCFB3;
+    background-image: url("https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/article/Apple-iPhone-16-Pro-hero-geo-240909_inline.jpg.small.jpg");
+    background-size: cover;
+
+}
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: #7E60BF;
+    background-image: url("https://images.samsung.com/is/image/samsung/p6pim/uk/2307/gallery/uk-galaxy-z-flip5-f731-466133-sm-f731bzyheub-537164612?$720_576_PNG$");
+    background-size: cover;
+}
+.active-left .left{
+    width: 75%;
+}
+.active-left .right{
+    width: 25%;
+}
+.active-right .left{
+    width: 25%;
+}
+.active-right .right{
+    width: 75%;
+}
+.left, .right{
+    transition: width 2s ease-in-out;
+}

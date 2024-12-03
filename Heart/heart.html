@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+    <style>
+        *{
+            margin: 0;
+            background-color: black;
+            height: 100vh;
+            overflow: hidden;
+        }
+        span{
+            background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            animation: animate 6s linear forwards;
+        }
+        @keyframes animate {
+            0%{
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+
+            100%{
+                transform: translate(-50%, -5000%);
+                opacity: 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        bodyEl = document.querySelector("body");
+
+        bodyEl.addEventListener("mousemove", (event)=>{
+            const xPos = event.offsetX;
+            const yPos = event.offsetY;
+
+            spanEl = document.createElement("span");
+
+            spanEl.style.position = "absolute";
+            spanEl.style.left = xPos + "px";
+            spanEl.style.top = yPos + "px";
+
+            const size = Math.random() * 100;
+
+            spanEl.style.height =  size + "px";
+            spanEl.style.width = size + "px";
+
+            bodyEl.appendChild(spanEl);
+
+            setTimeout(() => {
+                spanEl.remove();
+            }, 2000)
+        })
+    </script>
+</body>
+</html>
