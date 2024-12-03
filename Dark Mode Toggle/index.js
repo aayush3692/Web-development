@@ -14,6 +14,7 @@ function updateBody(){
     }
 }
 
+
 inputEl.addEventListener("input", ()=>{
     updateBody();
     updateLocalStorage()
